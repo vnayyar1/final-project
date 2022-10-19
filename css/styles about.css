@@ -1,0 +1,84 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url(/image/About.jpg);
+   background-size: cover;
+    background-position:inherit;
+    
+}
+
+ div#menu ul#main {
+    background-color: rgba(119, 121, 2, 0.619);
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    
+
+}
+div#menu ul#main li{
+    float: left;
+    position: relative;
+
+ }
+
+ div#menu ul#main::after
+{
+ content: " ";
+ clear: left;
+ display: block;
+ border: 5px solid rgba(238, 127, 255, 0.657);
+    
+}
+
+div#menu ul#main li a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid gray;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+div#menu ul#main li#first:first-child
+{
+    color: white;
+    font-size: 30pt;
+    text-align: center;
+    border-right: 1px solid gray;
+    line-height: 50px;
+    padding-right: 10px;
+    font-family: cursive;
+ }
+
+ div#menu ul#main li ul.sub{
+    list-style-type: none;
+    padding-left: 0px;
+    position: absolute;
+    background-color: gray;
+    display: none;
+ }
+ div#menu ul#main li ul.sub li a{
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    border-top: 1px solid white;
+    line-height: 30px;
+    background-color: rgba(119, 121, 2, 0.328);
+
+ }
+
+ div#menu ul#main li:hover ul.sub{
+    display: block;
+ }
+
+ 
