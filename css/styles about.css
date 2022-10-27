@@ -9,6 +9,7 @@ body{
     background-image: url(/image/About.jpg);
    background-size: cover;
     background-position:inherit;
+    font-family: 'Dosis';
     
 }
 
@@ -18,6 +19,7 @@ body{
     margin-top: 0px;
     margin-bottom: 0px;
     padding-left: 0px;
+    padding-top: 20px;
     
 
 }
@@ -45,18 +47,110 @@ div#menu ul#main li a{
     border-right: 1px solid gray;
     text-align: center;
     line-height: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'dosis, sans-serif;
     
 }
 div#menu ul#main li#first:first-child
 {
     color: white;
-    font-size: 30pt;
+    font-size: 40pt;
     text-align: center;
     border-right: 1px solid gray;
     line-height: 50px;
     padding-right: 10px;
-    font-family: cursive;
+    font-family: Freehand;
+ }
+
+ div#menu ul#main li ul.sub{
+    list-style-type: none;
+    padding-left: 0px;
+    position: absolute;
+    background-color: gray;
+    display: none;
+ }
+ div#menu ul#main li ul.sub li a{
+    text-decoration: none;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+    border-top: 1px solid white;
+    line-height: 30px;
+    background-color: rgba(119, 121, 2, 0.328);
+
+ }
+
+ div#menu ul#main li:hover ul.sub{
+    display: block;
+    background-color: black;
+ }
+
+
+.flex-container1{
+  display: flex;
+  background-color: rgba(102, 102, 102, 0.572);
+  font-size: 40px;
+  justify-content: left;
+  align-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: azure;
+  
+}
+div#menu ul#main {
+    background-color: rgba(119, 121, 2, 0.619);
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    
+    
+
+}
+div#menu ul#main li{
+    float: left;
+    position: relative;
+
+ }
+
+ div#menu ul#main::after
+{
+ content: " ";
+ clear: left;
+ display: block;
+ border: 5px solid rgba(238, 127, 255, 0.657);
+ 
+    
+}
+
+div#menu ul#main li a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border-right: 1px solid gray;
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Dosis', sans-serif;
+    
+}
+div#menu ul#main li#first:first-child
+{
+    color: white;
+    font-size: 40pt;
+    text-align: center;
+    border-right: 1px solid gray;
+    line-height: 50px;
+    padding-right: 10px;
+    font-family: 'freehand';
+ }
+
+ div#menu ul#main li a:hover{
+    background-color: black;
+ }
+ div#menu ul#main li a:active{
+    background-color: darkolivegreen;
  }
 
  div#menu ul#main li ul.sub{
@@ -81,4 +175,91 @@ div#menu ul#main li#first:first-child
     display: block;
  }
 
- 
+ .flex-container{
+    
+   
+   font-size: 2em;
+    text-align: center;
+    font-family:'Dosis', sans-serif;
+    text-align: center;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    height: 600px;
+    align-items: center;
+    justify-content: center;
+    
+
+
+ }
+ h2{font-size: 1em;
+    
+    font-family: 'Dosis', sans-serif;
+    padding: 30px;
+    color: white;
+    
+ }
+ .flex-container1{
+   display: flex;
+   background-color: rgba(102, 102, 102, 0.572);
+   font-size: 40px;
+   justify-content: left;
+   align-content: flex-start;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   color: azure;
+   
+ }
+ .footer{
+    background:#000;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:gray;
+    transition:0.5s;
+    }
+    
+    .footer .row a:hover{
+    color:#fff;
+    }
+    
+    .footer .row ul{
+    width:100%;
+    }
+    
+    .footer .row ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .row a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .row ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .row a i{
+    margin:0% 3%;
+    }
+    }
